@@ -1,0 +1,148 @@
+.toast {
+  position: fixed;
+  z-index: var(--z-index-toast);
+  display: flex;
+  align-items: center;
+  width: 320px;
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-3);
+  color: var(--white);
+  background-color: var(--gray-800);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Position variants */
+.toast-top-start {
+  top: var(--space-4);
+  left: var(--space-4);
+}
+
+.toast-top-center {
+  top: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-top-end {
+  top: var(--space-4);
+  right: var(--space-4);
+}
+
+.toast-middle-start {
+  top: 50%;
+  left: var(--space-4);
+  transform: translateY(-50%);
+}
+
+.toast-middle-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toast-middle-end {
+  top: 50%;
+  right: var(--space-4);
+  transform: translateY(-50%);
+}
+
+.toast-bottom-start {
+  bottom: var(--space-4);
+  left: var(--space-4);
+}
+
+.toast-bottom-center {
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-bottom-end {
+  bottom: var(--space-4);
+  right: var(--space-4);
+}
+
+/* Color variants */
+.toast-primary {
+  background-color: var(--primary);
+}
+
+.toast-secondary {
+  background-color: var(--secondary);
+}
+
+.toast-success {
+  background-color: var(--success);
+}
+
+.toast-danger {
+  background-color: var(--danger);
+}
+
+.toast-warning {
+  background-color: var(--warning);
+  color: var(--gray-900);
+}
+
+.toast-info {
+  background-color: var(--info);
+}
+
+.toast-light {
+  background-color: var(--light);
+  color: var(--gray-900);
+}
+
+.toast-dark {
+  background-color: var(--dark);
+}
+
+/* Close button */
+.toast .btn-close {
+  margin-left: auto;
+  margin-right: calc(-0.375 * var(--space-4));
+  margin-top: calc(-0.375 * var(--space-4));
+  margin-bottom: calc(-0.375 * var(--space-4));
+}
+
+/* Animation */
+@keyframes toast-show {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-hide {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.toast-show {
+  animation: toast-show 0.3s ease-out forwards;
+}
+
+.toast-hide {
+  animation: toast-hide 0.3s ease-in forwards;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .toast {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+}

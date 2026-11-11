@@ -1,0 +1,66 @@
+.select-group {
+  margin-bottom: var(--space-4);
+}
+
+.select-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-medium);
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  color: var(--gray-900);
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid var(--gray-300);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: var(--radius-md);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-select:focus {
+  border-color: var(--primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-select.is-invalid {
+  border-color: var(--danger);
+}
+
+.form-select.is-invalid:focus {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Custom arrow for select */
+.form-select::-ms-expand {
+  display: none;
+}
+
+.form-select option {
+  padding: var(--space-2) var(--space-4);
+}
+
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-2);
+  font-size: 80%;
+  color: var(--danger);
+}
+
+.form-text {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: 80%;
+  color: var(--gray-600);
+}

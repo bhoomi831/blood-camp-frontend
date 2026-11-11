@@ -1,0 +1,44 @@
+/* src/components/ui/dashboard/BloodInventoryCard.css */
+.blood-inventory-card {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.blood-inventory-card .inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blood-inventory-card .blood-type {
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+}
+
+.blood-inventory-card .units {
+  font-weight: 500;
+  min-width: 60px;
+  text-align: right;
+}
+
+.blood-inventory-card .progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.blood-inventory-card .progress-bar {
+  transition: width 0.6s ease;
+}
+
+.blood-inventory-card .card-footer {
+  border-top: 1px solid #e9ecef;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}

@@ -1,0 +1,233 @@
+.textarea-group {
+  margin-bottom: var(--space-4);
+}
+
+.textarea-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-medium);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color: var(--gray-900);
+  background-color: var(--white);
+  border-color: var(--primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0, 0.25);
+}
+
+.form-control.is-invalid {
+  border-color: var(--primary); /* Fallback color for browsers that don't support var() */
+  color: var(--white); /* Fallback color for text */
+  background-color: var(--success); /* Fallback for primary button */
+}
+
+/* Fallback for success button with custom variables */
+.btn-success {
+  background-color: #28a745; /* Fallback: Bootstrap-like success green */
+  border-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Fallback for info button */
+.btn-info {
+  background-color: #17a2b8; /* Fallback: Bootstrap-like info blue */
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+/* Fallback for warning button */
+.btn-warning {
+  background-color: #ffc107; /* Fallback: Bootstrap-like warning yellow */
+  border-color: #ffc107;
+  color: #212529; /* Dark text for contrast on yellow */
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+/* Fallback for light button */
+.btn-light {
+  background-color: #f8f9fa; /* Fallback: Bootstrap-like light gray */
+  border-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* Fallback for dark button */
+.btn-dark {
+  background-color: #343a40; /* Fallback: Bootstrap-like dark gray */
+  border-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+/* Fallback for primary outline button */
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Fallback for small button */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+/* Fallback for large button */
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+/* Fallback for block button */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Override the CSS variables fallback approach */
+:global(.btn-primary) {
+  background-color: var(--primary, #007bff);
+  border-color: var(--primary, #007bff);
+  color: var(--white, #fff);
+}
+
+:global(.btn-primary):hover {
+  background-color: var(--primary-dark, #0056b3);
+  border-color: var(--primary-dark, #0056b3);
+}
+
+:global(.btn-secondary) {
+  background-color: var(--secondary, #6c757d);
+  border-color: var(--secondary, #6c757d);
+  color: var(--white, #fff);
+}
+
+:global(.btn-secondary):hover {
+  background-color: var(--secondary-dark, #545b62);
+  border-color: var(--secondary-dark, #545b62);
+}
+
+:global(.btn-success) {
+  background-color: var(--success, #28a745);
+  border-color: var(--success, #28a745);
+  color: var(--white, #fff);
+}
+
+:global(.btn-success):hover {
+  background-color: var(--success-dark, #1e7e34);
+  border-color: var(--success-dark, #1e7e34);
+}
+
+:global(.btn-danger) {
+  background-color: var(--danger, #dc3545);
+  border-color: var(--danger, #dc3545);
+  color: var(--white, #fff);
+}
+
+:global(.btn-danger):hover {
+  background-color: var(--danger-dark, #bd2130);
+  border-color: var(--danger-dark, #bd2130);
+}
+
+:global(.btn-warning) {
+  background-color: var(--warning, #ffc107);
+  border-color: var(--warning, #ffc107);
+  color: var(--gray-900, #212529);
+}
+
+:global(.btn-warning):hover {
+  background-color: var(--warning-dark, #d39e00);
+  border-color: var(--warning-dark, #d39e00);
+}
+
+:global(.btn-info) {
+  background-color: var(--info, #17a2b8);
+  border-color: var(--info, #17a2b8);
+  color: var(--white, #fff);
+}
+
+:global(.btn-info):hover {
+  background-color: var(--info-dark, #117a8b);
+  border-color: var(--info-dark, #117a8b);
+}
+
+:global(.btn-light) {
+  background-color: var(--light, #f8f9fa);
+  border-color: var(--light, #f8f9fa);
+  color: var(--gray-900, #212529);
+}
+
+:global(.btn-light):hover {
+  background-color: var(--gray-200, #e9ecef);
+  border-color: var(--gray-200, #e9ecef);
+}
+
+:global(.btn-dark) {
+  background-color: var(--dark, #343a40);
+  border-color: var(--dark, #343a40);
+  color: var(--white, #fff);
+}
+
+:global(.btn-dark):hover {
+  background-color: var(--gray-800, #23272b);
+  border-color: var(--gray-800, #23272b);
+}
+
+:global(.btn-outline-primary) {
+  color: var(--primary, #007bff);
+  background-color: transparent;
+  border-color: var(--primary, #007bff);
+}
+
+:global(.btn-outline-primary):hover {
+  color: var(--white, #fff);
+  background-color: var(--primary, #007bff);
+  border-color: var(--primary, #007bff);
+}
+

@@ -1,0 +1,109 @@
+.recent-donors-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  height: 100%;
+}
+
+.recent-donors-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  background-color: var(--gray-100);
+  border-bottom: 1px solid var(--gray-300);
+  padding: var(--space-4);
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--gray-900);
+}
+
+.donor-list {
+  padding: var(--space-4);
+}
+
+.donor-item {
+  border-bottom: 1px solid var(--gray-200);
+  padding: var(--space-3) 0;
+}
+
+.donor-item:last-child {
+  border-bottom: none;
+}
+
+.donor-info {
+  flex: 1;
+}
+
+.donor-name {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-900);
+}
+
+.donor-details {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.donor-details strong {
+  color: var(--gray-800);
+}
+
+.donor-location {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.donor-location strong {
+  color: var(--gray-800);
+}
+
+.badge {
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.bg-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-3 {
+  padding-top: var(--space-3) !important;
+  padding-bottom: var(--space-3) !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.text-muted {
+  color: var(--gray-600) !important;
+}
+
+.text-sm {
+  font-size: var(--font-size-sm) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .donor-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

@@ -1,0 +1,98 @@
+.badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--radius-md);
+}
+
+.badge-pill {
+  padding-right: var(--space-4);
+  padding-left: var(--space-4);
+  border-radius: var(--radius-full);
+}
+
+.badge-primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.badge-secondary {
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+.badge-success {
+  color: var(--white);
+  background-color: var(--success);
+}
+
+.badge-danger {
+  color: var(--white);
+  background-color: var(--danger);
+}
+
+.badge-warning {
+  color: var(--gray-900);
+  background-color: var(--warning);
+}
+
+.badge-info {
+  color: var(--white);
+  background-color: var(--info);
+}
+
+.badge-light {
+  color: var(--gray-900);
+  background-color: var(--light);
+}
+
+.badge-dark {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+/* Add fallback for CSS variables */
+:global(.badge-primary) {
+  background-color: var(--primary, #007bff);
+  color: var(--white, #fff);
+}
+
+:global(.badge-secondary) {
+  background-color: var(--secondary, #6c757d);
+  color: var(--white, #fff);
+}
+
+:global(.badge-success) {
+  background-color: var(--success, #28a745);
+  color: var(--white, #fff);
+}
+
+:global(.badge-danger) {
+  background-color: var(--danger, #dc3545);
+  color: var(--white, #fff);
+}
+
+:global(.badge-warning) {
+  background-color: var(--warning, #ffc107);
+  color: var(--gray-900, #212529);
+}
+
+:global(.badge-info) {
+  background-color: var(--info, #17a2b8);
+  color: var(--white, #fff);
+}
+
+:global(.badge-light) {
+  background-color: var(--light, #f8f9fa);
+  color: var(--gray-900, #212529);
+}
+
+:global(.badge-dark) {
+  background-color: var(--dark, #343a40);
+  color: var(--white, #fff);
+}

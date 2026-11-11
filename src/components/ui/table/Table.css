@@ -1,0 +1,101 @@
+.table {
+  width: 100%;
+  margin-bottom: var(--space-4);
+  color: var(--gray-900);
+  background-color: var(--white);
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.table th {
+  background-color: var(--gray-100);
+  font-weight: var(--font-weight-medium);
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: var(--gray-50);
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--gray-10);
+}
+
+.table-bordered {
+  border: 1px solid var(--gray-300);
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid var(--gray-300);
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive > .table {
+  margin-bottom: 0;
+}
+
+.table-responsive > .table thead > tr > th,
+.table-responsive > .table tbody > tr > th,
+.table-responsive > .table tfoot > tr > th,
+.table-responsive > .table thead > tr > td,
+.table-responsive > .table tbody > tr > td,
+.table-responsive > .table tfoot > tr > td {
+  white-space: nowrap;
+}
+
+/* Utility classes for table styling */
+.table-sm th,
+.table-sm td {
+  padding: var(--space-2) var(--space-3);
+}
+
+.table-borderless tbody + tbody,
+.table-borderless td,
+.table-borderless th,
+.table-borderless thead th {
+  border: 0;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .table {
+  color: var(--gray-100);
+  background-color: var(--gray-800);
+}
+
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td {
+  border-color: var(--gray-600);
+}
+
+[data-theme="dark"] .table th {
+  background-color: var(--gray-700);
+}
+
+[data-theme="dark"] .table tbody tr:nth-of-type(odd) {
+  background-color: var(--gray-700);
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+  background-color: var(--gray-600);
+}
+
+[data-theme="dark"] .table-bordered {
+  border-color: var(--gray-600);
+}
+
+[data-theme="dark"] .table-bordered th,
+[data-theme="dark"] .table-bordered td {
+  border-color: var(--gray-600);
+}

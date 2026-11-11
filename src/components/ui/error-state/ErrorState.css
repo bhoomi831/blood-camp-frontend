@@ -1,0 +1,41 @@
+.error-state {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-state-icon {
+  font-size: 3rem;
+  color: var(--danger);
+  margin-bottom: var(--space-4);
+}
+
+.error-state-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-900);
+  margin-bottom: var(--space-3);
+}
+
+.error-state-description {
+  font-size: var(--font-size-base);
+  color: var(--gray-600);
+  margin-bottom: var(--space-4);
+  line-height: var(--line-height-base);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .error-state {
+    padding: var(--space-6) var(--space-3);
+  }
+
+  .error-state-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .error-state-description {
+    font-size: var(--font-size-sm);
+  }
+}

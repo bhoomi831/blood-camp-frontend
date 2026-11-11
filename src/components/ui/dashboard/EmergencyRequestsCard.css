@@ -1,0 +1,163 @@
+/* src/components/ui/dashboard/EmergencyRequestsCard.css */
+.emergency-requests-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  height: 100%;
+}
+
+.emergency-requests-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  background-color: var(--gray-100);
+  border-bottom: 1px solid var(--gray-300);
+  padding: var(--space-4);
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--gray-900);
+}
+
+.request-list {
+  padding: var(--space-4);
+}
+
+.request-item {
+  border-bottom: 1px solid var(--gray-200);
+  padding: var(--space-3) 0;
+}
+
+.request-item:last-child {
+  border-bottom: none;
+}
+
+.request-info {
+  flex: 1;
+}
+
+.request-patient {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-900);
+}
+
+.request-details {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.request-details strong {
+  color: var(--gray-800);
+}
+
+.request-hospital {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.request-hospital strong {
+  color: var(--gray-800);
+}
+
+.request-date {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+.request-date strong {
+  color: var(--gray-800);
+}
+
+.badge {
+  padding: 0.25em 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+/* Fixed badge colors for WCAG AA contrast */
+.bg-high {
+  background-color: var(--danger);
+  color: white; /* White on danger has sufficient contrast */
+}
+
+.bg-medium {
+  background-color: var(--warning);
+  color: #000; /* Black on warning for sufficient contrast (4.5:1) */
+}
+
+.bg-low {
+  background-color: var(--info);
+  color: white; /* White on info has sufficient contrast */
+}
+
+/* Status-specific badge colors with proper text contrast */
+.bg-secondary {
+  background-color: var(--gray-500);
+  color: white;
+}
+
+.bg-info {
+  background-color: var(--info);
+  color: black; /* Black on info for sufficient contrast */
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.bg-success {
+  background-color: var(--success);
+  color: white;
+}
+
+.bg-dark {
+  background-color: var(--gray-900);
+  color: white;
+}
+
+/* Fix for urgent statuses - ensure text visibility */
+.badge.bg-white.text-dark {
+  background-color: white;
+  color: var(--gray-900);
+}
+
+.card-footer {
+  background-color: var(--gray-100);
+  border-top: 1px solid var(--gray-300);
+  padding: var(--space-4);
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .request-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Ensure touch targets are at least 44x44px */
+.btn {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.btn-sm {
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0.25rem 0.5rem;
+}

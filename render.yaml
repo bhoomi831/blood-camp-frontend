@@ -1,0 +1,16 @@
+# Optional: Render Blueprint. Lets Render create the static site for you.
+services:
+  - type: web
+    name: blood-donation-frontend
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false   # you type the friend's backend link in the Render dashboard
+      - key: NODE_VERSION
+        value: 22
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
